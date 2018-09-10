@@ -10,6 +10,7 @@ def find_word_count(input_file):
         line_words = line.split()
         # line_words = line.split(" ")
         for word in line_words:
+            word = word.lower()
             for c in word:
                 if c in string.punctuation:
                     word= word.strip(c)
