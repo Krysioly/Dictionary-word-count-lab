@@ -1,8 +1,12 @@
 # put your code here.
 
 import string
+import sys
 
 def find_word_count(input_file):
+    """
+
+    """
     file = open(input_file)
     words_dict = {}
 
@@ -19,5 +23,5 @@ def find_word_count(input_file):
     for word, count in words_dict.items():
         print("{} {}".format(word, count))
 
-find_word_count("test.txt")
+find_word_count(sys.argv[1])
 
