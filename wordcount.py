@@ -5,7 +5,7 @@ def find_word_count(input_file):
     words_dict = {}
 
     for line in file:
-        line_words = line.rstrip().split()
+        line_words = line.split()
         # line_words = line.split(" ")
         for word in line_words:
             words_dict[word] = words_dict.get(word, 0) + 1
