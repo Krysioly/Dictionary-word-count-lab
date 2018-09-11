@@ -32,7 +32,7 @@ def find_word_count(input_file):
     # This is not working!!!!
     for c in text:
         if c in string.punctuation:
-            text=text.strip(c)
+            text=text.replace(c,"")
 
     words = text.split()
 
